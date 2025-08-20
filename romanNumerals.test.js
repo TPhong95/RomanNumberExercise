@@ -5,6 +5,7 @@ function romanNumerals(number) {
   for (let i = 0; i < number; i++) {
     result += "I";
   }
+
   return result;
 }
 
@@ -18,4 +19,8 @@ test("2 in roman numerals is II", () => {
 
 test("3 in roman numerals is III", () => {
   expect(romanNumerals(3)).toBe("III");
+});
+
+test("4 in roman numerals is IV", () => {
+  expect(romanNumerals(4)).toBe("IV");
 });
